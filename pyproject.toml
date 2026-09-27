@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=75", "wheel", "packaging>=24.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ares-cli"
+version = "1.0.0-beta4"
+description = "Ares ASM command-line interface"
+requires-python = ">=3.10"
+dependencies = ["requests>=2.28"]
+license = "AGPL-3.0-or-later"
+license-files = ["LICENSE"]
+authors = [{ name = "Martín Romera" }]
+
+[project.scripts]
+ares = "ares_cli:main"
+
+[tool.setuptools]
+py-modules = ["ares_cli"]

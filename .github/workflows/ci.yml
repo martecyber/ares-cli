@@ -1,0 +1,21 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.10'
+
+      - run: pip install build
+      # No test suite exists for this single-file script — this is a packaging sanity check
+      # only (confirms pyproject.toml + ares_cli.py still produce a valid sdist/wheel).
+      - run: python -m build
+      - run: python ares_cli.py --version
