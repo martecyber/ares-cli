@@ -44,7 +44,7 @@ except ImportError:
 # single source of truth read at runtime (pyproject.toml isn't shipped alongside the
 # raw-script/.deb/.rpm installs, only this file is), used both to report `ares --version`
 # and to compare against the server's version for the auto-update check below.
-CLI_VERSION = "1.0.0-beta4"
+CLI_VERSION = "1.0.0-beta1"
 
 # ── Config ────────────────────────────────────────────────────────────────────
 

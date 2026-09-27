@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "ares-cli"
-version = "1.0.0-beta4"
+version = "1.0.0-beta1"
 description = "Ares ASM command-line interface"
 requires-python = ">=3.10"
 dependencies = ["requests>=2.28"]
